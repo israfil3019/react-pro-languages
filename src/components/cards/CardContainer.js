@@ -1,8 +1,16 @@
+import React, { useEffect } from "react";
 import logo from "./react.svg";
+import { categories } from "../../helper/data";
 import Cards from "./Cards";
 import "./Cards.scss";
 
-export default function CardContainer() {
+export default function Card() {
+  useEffect(
+    () =>
+      (document.querySelector(".react-image").className =
+        "react-image-reverse"),
+    []
+  );
 
   return (
     <div>
@@ -10,9 +18,13 @@ export default function CardContainer() {
 
       <div className="card-div">
         <div className="small-card-div">
-         
-            <Cards/>
-
+          {categories.map((front) => (
+            <Cards
+              name={front.name}
+              img={front.img}
+              options={front.options}
+            />
+          ))}
         </div>
       </div>
     </div>

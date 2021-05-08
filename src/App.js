@@ -1,10 +1,10 @@
 import './App.scss';
-import Card from './components/cards/card';
+import CardContainer from './components/cards/CardContainer';
 
 function App() {
   return (
     <div className="App">
-      <Card/>
+      <CardContainer/>
     </div>
   );
 }
