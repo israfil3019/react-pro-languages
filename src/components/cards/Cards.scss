@@ -1,0 +1,49 @@
+.react-image {
+  padding: 0;
+}
+.react-image-reverse {
+  width: 250px;
+  transition: 3s ease all;
+  transform: rotateY(360deg);
+}
+
+.small-card-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.small-card {
+  width: 140px;
+  height: 114px;
+  background-color: rgb(248, 226, 197);
+  border-radius: 10px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition:.5s;
+  & .images {
+    width: 70px;
+    height: 50px;
+    margin: auto;
+    transition:.5s;
+  }
+  &:hover {
+    background-color: rgb(250, 206, 159);
+    box-shadow: 0px 4px 8px 0 rgb(79, 79, 110);
+    & .images {
+      transform: scale(1.3);
+    }
+  }
+}
+.image-div {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -18px;
+}
+
+.title {
+  font-family: "Itim", cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
