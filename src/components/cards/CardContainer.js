@@ -15,8 +15,8 @@ export default function Card() {
   return (
     <div>
       <img src={logo} alt="react-logo" className="react-image" />
-
       <div className="card-div">
+        <h2>Languages</h2>
         <div className="small-card-div">
           {categories.map((front) => (
             <Cards

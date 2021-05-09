@@ -1,30 +1,62 @@
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  font-family: "Itim", cursive;
+}
+.card-div {
+  background: linear-gradient(
+    55deg,
+    #f79554 45%,
+    #4ba6db 45%,
+    #4ba6db 55%,
+    #f79554 55%
+  );
+  height: 560px;
+  width: 320px;
+  border-radius: 1rem;
+  margin: auto;
+  & .small-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  & h2 {
+    color: #12bfd6;
+    font-weight: 600;
+    margin-bottom: -4px;
+  }
+}
 .react-image {
   padding: 0;
 }
 .react-image-reverse {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   width: 250px;
   transition: 3s ease all;
   transform: rotateY(360deg);
 }
-
-.small-card-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.small-card {
+.small-cards {
   width: 140px;
   height: 114px;
   background-color: rgb(248, 226, 197);
   border-radius: 10px;
   margin-top: 12px;
   cursor: pointer;
-  transition:.5s;
+  transition: 0.5s;
+  & .image-div {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -18px;
+  }
   & .images {
-    width: 70px;
-    height: 50px;
+    width: 60px;
     margin: auto;
-    transition:.5s;
+    transition: 0.5s;
+  }
+  & .title {
+    font-size: 1.2rem;
+    font-weight: 600;
   }
   &:hover {
     background-color: rgb(250, 206, 159);
@@ -34,16 +66,19 @@
     }
   }
 }
-.image-div {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -18px;
-}
 
-.title {
-  font-family: "Itim", cursive;
-  font-size: 1.2rem;
-  font-weight: 600;
+.scripts {
+  width: 100%;
+  height: 114px;
+  text-align: left;
+  padding-top: 3px;
+  & ul {
+    margin-left: -10px;
+    margin-top: 5px;
+    & li {
+      line-height: 1.2rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
 }
